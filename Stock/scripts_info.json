@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Lagerdere",
+    "filename": "Stock/Lagerdere.py",
+    "description": "Performs financial analysis on Lagerdere stock data.",
+    "language": "Python"
+  },
+  {
+    "name": "Avolta",
+    "filename": "Stock/Avolta.py",
+    "description": "Analyzes Avolta stock performance trends.",
+    "language": "Python"
+  }
+]
