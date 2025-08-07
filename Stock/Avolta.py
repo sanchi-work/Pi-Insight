@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-base_path = r"C:\Users\sanch\OneDrive\Desktop\Stock-Automation"
+base_path = r"C:\Users\sanch\OneDrive - Pi Insight & Research Ltd\Pi Insight\Automations_Sanchi\Github\Stock\Avolta"
 all_data = []
 
 # List folders like Avo_24, Avo_25
