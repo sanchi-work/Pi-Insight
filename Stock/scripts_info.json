@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Lagerdere",
+    "filename": "https://piinsight-my.sharepoint.com/personal/sanch_piinsight_co_uk/Documents/Pi%20Insight/Automations_Sanchi/Github/Stock/Lagerdere.py?e=abc123",
+    "description": "Analyzes stock data for the Lagerdere product line.",
+    "language": "Python"
+  },
+  {
+    "name": "Avolta",
+    "filename": "https://piinsight-my.sharepoint.com/personal/sanch_piinsight_co_uk/Documents/Pi%20Insight/Automations_Sanchi/Github/Stock/Avolta.py?e=xyz456",
+    "description": "Processes Avolta stock data and outputs reports.",
+    "language": "Python"
+  }
+]
