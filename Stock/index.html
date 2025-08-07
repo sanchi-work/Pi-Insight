@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Script Hub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    .script-card {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .script-card h2 {
+      margin-top: 0;
+      color: #007acc;
+    }
+    .script-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .script-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>📁 My Python Scripts</h1>
+  <div id="scripts-container">Loading scripts...</div>
+
+  <script>
+    fetch('scripts_info.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('scripts-container');
+        container.innerHTML = ''; // Clear loading text
+
+        data.forEach(script => {
+          const card = document.createElement('div');
+          card.className = 'script-card';
+
+          card.innerHTML = `
+            <h2>${script.name}</h2>
+            <p><strong>Language:</strong> ${script.language}</p>
+            <p>${script.description}</p>
+            <a href="${script.filename}" target="_blank">🔗 View Script</a>
+          `;
+
+          container.appendChild(card);
+        });
+      })
+      .catch(error => {
+        document.getElementById('scripts-container').innerText = 'Failed to load scripts.';
+        console.error(error);
+      });
+  </script>
+</body>
+</html>
